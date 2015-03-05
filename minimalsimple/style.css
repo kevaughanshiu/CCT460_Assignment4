@@ -561,7 +561,7 @@ a:active {
 	left: -999em;
 	z-index: 99999;
 	padding: 0;
-	background: #4d4d4d;
+	/*background: #4d4d4d;*/
 }
 
 .main-navigation ul ul ul {
@@ -580,13 +580,13 @@ a:active {
 .main-navigation li:hover > a {
 	color: #fff;
 	color: hsl(0, 0%, 30%);
-	background: #4d4d4d;
+	/*background: #4d4d4d;*/
 	background: hsl(0, 0%, 30%);
 }
 
 .main-navigation ul ul :hover > a {
 
-	background: #313131;
+	/*background: #313131;*/
 	background: hsl(0, 0%, 30%);
 }
 
