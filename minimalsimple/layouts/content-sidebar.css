@@ -3,22 +3,10 @@ Theme Name: minimalsimple
 Layout: Content-Sidebar
 */
 
-.content-area {
-	float: left;
-	margin-left: -380px;
-	padding-left: 380px;
-	width: 100%;
-}
 .site-main {
 	background: #b2b2b2;
 }
-.site-content .widget-area {
-	width: 380px;
-	float: right;
-	padding: 4rem;
-	background: #fff;
-	background hsl(0, 0%, 100%);
-}
+
 .site-footer {
 	clear: both;
 	width: 100%;
@@ -38,3 +26,21 @@ Layout: Content-Sidebar
 	padding: 0 4rem;
 	margin: 0 auto;
 }
+
+	@media screen and (min-width: 1120px){
+	.content-area {
+		float: left;
+		margin-left: -380px;
+		padding-left: 380px;
+		width: 100%;
+	}
+}
+
+	@media screen and (max-width: 1119px){
+		.site-content .widget-area {
+			width: auto;
+			max-width: 780px;
+			float: none;
+			margin: 1em auto 0;
+		}
+	}
