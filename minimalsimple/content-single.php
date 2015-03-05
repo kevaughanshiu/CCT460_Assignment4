@@ -32,6 +32,7 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
+	<!--add tags to the bottom of the posts-->
 	<?php 
 		echo get_the_tag_list ('<ul><li><i class="fa fa-tag"></i>','</li><li><i class="fa fa-tag"></i>','</li></ul>');
 	?>

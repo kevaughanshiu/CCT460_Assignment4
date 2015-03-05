@@ -22,6 +22,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'minimalsimple' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+	<!--made a condition where if both the header image and website text appeared it would put them together-->
 			<?php if ( get_header_image() && ('blank' == get_header_textcolor())) : ?>
 				<div class="header-image">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -29,6 +30,7 @@
 					</a>
 				</div>	
 			<?php endif; // End header image check. ?>
+			<!--the header image becomes the background image-->
 		<div class="site-branding header-background-image" style ='background-image: url(<?php header_image(); ?>)'>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
