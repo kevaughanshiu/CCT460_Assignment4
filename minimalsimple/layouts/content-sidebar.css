@@ -35,6 +35,7 @@ Layout: Content-Sidebar
 	margin: 0 auto;
 }
 
+/*For larger screens, widgets are located on right hand side*/
 	@media screen and (min-width: 1120px){
 	.content-area {
 		float: left;
@@ -43,7 +44,7 @@ Layout: Content-Sidebar
 		width: 100%;
 	}
 }
-
+/*For smaller/mobile screens, widgets are located at bottom of page*/
 	@media screen and (max-width: 1119px){
 		.site-content .widget-area {
 			width: auto;
