@@ -716,6 +716,14 @@ x.x header
 	background: #2C86BA;
 	background: hsl(202, 62%, 45%);
 }
+.title-box{
+	width: 600px;
+	max-width: 75%;
+	padding: 4rem;
+	margin: 0 auto;
+	border: solid 1px #fff;
+	border: solid 1px hsla(0, 0%, 100%, .3);
+}
 .site-title {
 	font-weight: 700;
 	font-size: 40px:;
