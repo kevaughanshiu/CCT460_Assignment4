@@ -29,7 +29,7 @@
 					</a>
 				</div>	
 			<?php endif; // End header image check. ?>
-		<div class="site-branding" style ='background-image: url(<?php header_image(); ?>)'>
+		<div class="site-branding header-background-image" style ='background-image: url(<?php header_image(); ?>)'>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div><!-- .site-branding -->
