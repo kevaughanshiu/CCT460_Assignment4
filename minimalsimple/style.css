@@ -730,6 +730,15 @@ x.x header
 	font-size: 20px;
 	font-size: 2rem;
 }
+.site-branding a {
+	text-decoration: none;
+}
+.site-title a, 
+.site-descrption {
+	color: #ffF;
+	color: hsl(0, 0%, 100%);
+}
+
 /*--------------------------------------------------------------
 9.0 Widgets
 --------------------------------------------------------------*/
