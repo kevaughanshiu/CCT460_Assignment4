@@ -5,6 +5,7 @@ Layout: Content-Sidebar
 
 .site-main {
 	background: #FFFFFF;
+	padding-bottom: 3em;
 }
 .site-content .widget-area {
 	width: 380px;
