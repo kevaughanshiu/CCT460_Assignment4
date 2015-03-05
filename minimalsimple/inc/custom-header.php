@@ -26,9 +26,9 @@ function minimalsimple_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'minimalsimple_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => 'FFFFFF',
-		'width'                  => 1000,
-		'height'                 => 250,
-		'flex-height'            => true,
+		'width'                  => 1280,
+		'height'                 => 300,
+		'flex-height'            => false,
 		'wp-head-callback'       => 'minimalsimple_header_style',
 		'admin-head-callback'    => 'minimalsimple_admin_header_style',
 		'admin-preview-callback' => 'minimalsimple_admin_header_image',
