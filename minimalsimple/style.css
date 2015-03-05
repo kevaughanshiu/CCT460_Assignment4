@@ -278,6 +278,18 @@ th {
 
 }
 
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/Roboto-Regular-webfont.eot');
+    src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 h1.site-title a {
 	font-family: 'troikaregular', sans-serif;
 }
@@ -291,6 +303,7 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
+	font-family: 'robotoregular', Verdana, Helvetica, sans-serif;
 }
 
 h1,
