@@ -730,6 +730,10 @@ a:active {
 /*--------------------------------------------------------------
 x.x header
 --------------------------------------------------------------*/
+.header-image img {
+	display: block;
+	margin: 0 auto;
+}
 .site-branding {
 	padding: 4rem 0;
 	text-align: center;
