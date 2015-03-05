@@ -306,7 +306,8 @@ h1.site-title a {
 	font-family: 'troikaregular', sans-serif;
 }
 
-h1.entry-title {
+h1.entry-title,
+h1.widget-title {
 	font-family: 'helsinkiregular', 'Gill Sans', 'Arial Black', sans-serif;
 }
 
