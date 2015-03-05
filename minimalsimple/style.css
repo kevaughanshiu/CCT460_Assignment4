@@ -820,6 +820,13 @@ x.x header
 	display: block;
 	margin: 0 auto;
 }
+.header-background-image {
+	background: no-repeat center;
+	background-size: cover!important;
+	-moz-background-size: cover!important;
+	-webkit-background-size: cover!important;
+}
+
 .site-branding {
 	padding: 4rem 0;
 	text-align: center;
