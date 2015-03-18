@@ -48,7 +48,7 @@ class socialmediahub extends WP_Widget
 
 <?php
 	}
-	function for($instance)
+	function form($instance)
 	{
 
 ?>
