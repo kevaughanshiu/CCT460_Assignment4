@@ -12,7 +12,7 @@ function socialmediahub_init()
 {
 	register_widget("socialmediahub");
 }	
-
+add_action('widgets_init','socialmediahub_init');
 /*function register_stylesheets()
 {
 	//link an external CSS stylesheet
