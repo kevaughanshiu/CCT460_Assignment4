@@ -67,7 +67,7 @@ class socialmediahub extends WP_Widget
                  <p>
                     <label for="radio">Choose:</label>
                     <input name="radio" type="radio" value="twitter1" checked="checked" tabindex="6" id="twitter1"/>
-                    <img src=""
+                    <img src="wp-content/plugins/Widget_Assignment/icons/twitter.png">
                  </p>   
           </label> 
           <br/>
@@ -76,9 +76,11 @@ class socialmediahub extends WP_Widget
                     <input id="<?php echo $this->get_field_id('instagram');?>"
                     name="<?php echo $this->get_field_name('instagram'); ?>"
                     value="<?php echo esc_attr($instance['instagram']);?>" />
-                    <form name="instagramicon" method="post">
-                    <input type="radio" name="instaicon"/><a href="/Widget_Assignment/icons/instagram.png"/>
-                    <a href="/Widget_Assignment/icons/instagram-icon.png"/>
+                   <p>
+                    <label for="radio">Choose:</label>
+                    <input name="radio" type="radio" value="instagram1" checked="checked" tabindex="6" id="instagram1"/>
+                    <img src="wp-content/plugins/Widget_Assignment/icons/instagram.png">
+                 </p>   
           </label>
           <br/>
           <label for="<?php echo $this->get_field_id('facebook');?>">
