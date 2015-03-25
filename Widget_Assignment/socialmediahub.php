@@ -38,7 +38,7 @@ class socialmediahub extends WP_Widget
     $instagram=($instance['instagram']) ? 'http://www.instagram.com/' . $instance['instagram'] : 'N/A';
     $facebook=($instance['facebook']) ? 'http://www.facebook.com/' . $instance['facebook'] : 'N/A';
     $google=($instance['google']) ? $instance['google'] : 'N/A';
-    $tumblr=($tumblr['tumblr']) ? $tumblr['tumblr'] : 'N/A';
+    $tumblr=($instance['tumblr']) ? $instance['tumblr'] : 'N/A';
 ?>
 
 	<div class ="frontface">
@@ -48,7 +48,7 @@ class socialmediahub extends WP_Widget
         <a href="<?php echo $instagram?>">Instagram</a><br/>
         <a href="<?php echo $facebook?>">Facbook</a><br/>
         <a href="<?php echo $google?>">Google+</a><br/>
-        <a href="<?php echo $tumblr?>">Tumblr</a><br/>
+        <a href="<?php echo $tumblr?>"><img src="tumblr.png"></a><br/>
 
         <?php echo $after_widget; ?>	
     </div>
