@@ -34,7 +34,7 @@ class socialmediahub extends WP_Widget
 	{
 		extract($args, EXTR_SKIP);
 		$title = 'Follow Me Here';
-		$twitter=($instance['twitter']) ? $instance['twitter'] : 'N/A';
+		$twitter=($instance['twitter']) ? 'http://twitter.com/' . $instance['twitter'] : 'N/A';
     $instagram=($instance['instagram']) ? $instance['instagram'] : 'N/A';
     $facebook=($instance['facebook']) ? $instance['facebook'] : 'N/A';
     $google=($instance['google']) ? $instance['google'] : 'N/A';
