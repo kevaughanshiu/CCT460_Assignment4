@@ -48,6 +48,7 @@ class socialmediahub extends WP_Widget
         <a href="<?php echo $instagram?>">Instagram</a><br/>
         <a href="<?php echo $facebook?>">Facbook</a><br/>
         <a href="<?php echo $google?>">Google+</a><br/>
+        <a href="<?php echo $tumblr?>">Tumblr</a><br/>
 
         <?php echo $after_widget; ?>	
     </div>
@@ -59,26 +60,28 @@ class socialmediahub extends WP_Widget
 
 ?>
 	<label for="<?php echo $this->get_field_id('twitter');?>">
-               Twitter URL: 
+               Twitter Username: 
 
                     <input id="<?php echo $this->get_field_id('twitter');?>"
                     name="<?php echo $this->get_field_name('twitter'); ?>"
                     value="<?php echo esc_attr($instance['twitter']);?>" /> 
                  <p>
                     <label for="radio">Choose:</label>
-                    <input name="radio" type="radio" value="twitter1" checked="checked" tabindex="6" id="twitter1"/>
+                    <input name="radio" type="radio" value="twitter1" checked="checked" id="twitter1"/>
+                    <input name="radio" type="radio" value="twitter2" id="twitter2"/>
                     <img src="wp-content/plugins/Widget_Assignment/icons/twitter.png">
                  </p>   
           </label> 
           <br/>
             <label for="<?php echo $this->get_field_id('instagram');?>">
-               Instagram URL:
+               Instagram Username:
                     <input id="<?php echo $this->get_field_id('instagram');?>"
                     name="<?php echo $this->get_field_name('instagram'); ?>"
                     value="<?php echo esc_attr($instance['instagram']);?>" />
                    <p>
                     <label for="radio">Choose:</label>
-                    <input name="radio" type="radio" value="instagram1" checked="checked" tabindex="6" id="instagram1"/>
+                    <input name="radio" type="radio" value="instagram1" checked="checked" id="instagram1"/>
+                    <input name="radio" type="radio" value="instagram2" id="instagram"/>
                     <img src="wp-content/plugins/Widget_Assignment/icons/instagram.png">
                  </p>   
           </label>
