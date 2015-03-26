@@ -139,6 +139,3 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
-
-include(WP_CONTENT_DIR . '/my_shortcodes.php');
-add_shortcode( 'kase_short_sc', 'kase_short');

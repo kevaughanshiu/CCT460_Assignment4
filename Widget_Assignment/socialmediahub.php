@@ -70,6 +70,14 @@ class socialmediahub extends WP_Widget
         <a href="<?php echo $google?>"><img src="http://i.imgur.com/Fd7pXPC.png" style="width:50px; height:50px"></a><br/>
         <a href="<?php echo $tumblr?>"><img src="http://i.imgur.com/HDHpL0K.png" style="width:50px; height:50px"></a><br/>
 -->
+=======
+		<a href="<?php echo $twitter?>"><img src="http://i.imgur.com/Mv8pCdy.png" style="width:50px; height:50px"></a>
+        <a href="<?php echo $instagram?>"><img src="http://i.imgur.com/VGWFXae.png" style="width:50px; height:50px"></a>
+        <a href="<?php echo $facebook?>"><img src="http://i.imgur.com/jeEPz6J.png" style="width:50px; height:50px"></a>
+        <br><a href="<?php echo $google?>"><img src="http://i.imgur.com/Fd7pXPC.png" style="width:50px; height:50px"></a>
+        <a href="<?php echo $tumblr?>"><img src="http://i.imgur.com/HDHpL0K.png" style="width:50px; height:50px"></a>
+
+>>>>>>> origin/master
         <?php echo $after_widget; ?>	
     </div>
 
@@ -158,9 +166,13 @@ class socialmediahub extends WP_Widget
 }
 
 //Add Shortcode
-function kase_thanks_short() {
-  return "<h3>Thanks for Following!</h3>";
+function kase_short($atts, $content = null){
+  extract(shortcode_atts(array(
+    'class' => ''
+  ), $atts));
+  
+  return '<div class="kasesc">' . do_shortcode($content) . '</div>';
 }
-add_shortcode ('kase_thanks_short', 'kase_thanks_short');
+add_shortcode('kase_short', 'kase_short');
 
 ?>
