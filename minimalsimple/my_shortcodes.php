@@ -1,5 +1,7 @@
 <?php 
+function kase_short(){
 	
-echo 'Thanks for following'
+echo 'Thanks for following';
 }
+
 ?>
