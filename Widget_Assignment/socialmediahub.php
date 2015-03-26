@@ -50,11 +50,11 @@ class socialmediahub extends WP_Widget
 	<div class ="frontface">
 		<?php echo $before_widget; ?>
 		<?php echo $before_title . $title . $after_title ?>
-		<a href="<?php echo $twitter?>"><img src="http://i.imgur.com/Mv8pCdy.png" style="width:25x; height:25px"></a><br/>
-        <a href="<?php echo $instagram?>"><img src="http://i.imgur.com/VGWFXae.png" style="width:25x; height:25px"></a><br/>
-        <a href="<?php echo $facebook?>"><img src="http://i.imgur.com/jeEPz6J.png" style="width:25x; height:25px"></a><br/>
-        <a href="<?php echo $google?>"><img src="http://i.imgur.com/Fd7pXPC.png" style="width:25x; height:25px"></a><br/>
-        <a href="<?php echo $tumblr?>"><img src="http://i.imgur.com/HDHpL0K.png" style="width:25x; height:25px"></a><br/>
+		<a href="<?php echo $twitter?>"><img src="http://i.imgur.com/Mv8pCdy.png" style="width:50px; height:50px"></a><br/>
+        <a href="<?php echo $instagram?>"><img src="http://i.imgur.com/VGWFXae.png" style="width:50px; height:50px"></a><br/>
+        <a href="<?php echo $facebook?>"><img src="http://i.imgur.com/jeEPz6J.png" style="width:50px; height:50px"></a><br/>
+        <a href="<?php echo $google?>"><img src="http://i.imgur.com/Fd7pXPC.png" style="width:50px; height:50px"></a><br/>
+        <a href="<?php echo $tumblr?>"><img src="http://i.imgur.com/HDHpL0K.png" style="width:50px; height:50px"></a><br/>
 
         <?php echo $after_widget; ?>	
     </div>
