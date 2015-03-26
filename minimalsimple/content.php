@@ -33,7 +33,8 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
+		<?php minimalsimple_entry_footer(); 
 		[kase_thanks_short]
-		<?php minimalsimple_entry_footer(); ?>
+		?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
