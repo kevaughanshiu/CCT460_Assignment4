@@ -140,9 +140,3 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-
-//Add Shortcode
-function kase_thanks_short() {
-  return "<h3>Thanks for Following!</h3>";
-}
-add_shortcode ('kase_thanks_short', 'kase_thanks_short');
