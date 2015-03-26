@@ -13,12 +13,27 @@ function socialmediahub_init()
 	register_widget("socialmediahub");
 }	
 add_action('widgets_init','socialmediahub_init');
-/*function register_stylesheets()
-{
-	//link an external CSS stylesheet
-	wp_register_style('socialmediahub', plugins_url('socialmedstyle.css', FILE), array(), null);
 
-}*/
+
+
+function register_stylesheets()
+{
+	  // Register style sheet.
+    add_action( 'wp_enqueue_scripts', 'register_plugin_styles' );
+    /**
+     * Register style sheet.
+     */
+    function register_plugin_styles() 
+    {
+      wp_register_style('socialmediahub', plugins_url('socialmedstyle.css', FILE), array(), null);
+      wp_enqueue_style( 'my-plugin' );
+    }
+  }
+
+
+
+
+
 class socialmediahub extends WP_Widget
 {
 
