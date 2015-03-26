@@ -34,7 +34,6 @@
 
 	<footer class="entry-footer">
 		<?php minimalsimple_entry_footer(); 
-		[kase_thanks_short]
 		?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
