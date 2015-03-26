@@ -14,10 +14,5 @@ function kase_short($atts, $content = null){
 	
 	return '<div class="kasesc">' . do_shortcode($content) . '</div>';
 }
-function kase_short_register() {
-	add_shortcode('kase_short_sc', 'kase_short');
-}
-
-add_action('init', 'kase_short_register');
-
+add_shortcode('kase_short', 'kase_short');
 ?>
