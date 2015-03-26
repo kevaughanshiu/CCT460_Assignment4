@@ -69,7 +69,7 @@ class socialmediahub extends WP_Widget
                     <label for="radio1">Choose:</label>
                     <input name="radio1" type="radio" value="twitter1" checked="checked" id="twitter1"/>
                     <input name="radio1" type="radio" value="twitter2" id="twitter2"/>
-                    <img src="http://i.imgur.com/Mv8pCdy.png"/>
+                    <img src="http://i.imgur.com/Mv8pCdy.png" style="width:30x; height:30px">
                  </p>   
           </label> 
           <br/>
@@ -82,7 +82,7 @@ class socialmediahub extends WP_Widget
                     <label for="radio2">Choose:</label>
                     <input name="radio2" type="radio" value="instagram1" checked="checked" id="instagram1"/>
                     <input name="radio2" type="radio" value="instagram2" id="instagram"/>
-                    <img src="http://i.imgur.com/VGWFXae.png">
+                    <img src="http://i.imgur.com/VGWFXae.png" style="width:30x; height:30px">
                  </p>   
           </label>
           <br/>
@@ -91,6 +91,12 @@ class socialmediahub extends WP_Widget
                     <input id="<?php echo $this->get_field_id('facebook');?>"
                     name="<?php echo $this->get_field_name('facebook'); ?>"
                     value="<?php echo esc_attr($instance['facebook']);?>" />
+                    <p>
+                    <label for="radio2">Choose:</label>
+                    <input name="radio2" type="radio" value="instagram1" checked="checked" id="instagram1"/>
+                    <input name="radio2" type="radio" value="instagram2" id="instagram"/>
+                    <img src="http://i.imgur.com/jeEPz6J.png" style="width:30x; height:30px">
+                 </p> 
           </label>
           <br/>
           <label for="<?php echo $this->get_field_id('google');?>">
@@ -98,6 +104,12 @@ class socialmediahub extends WP_Widget
                     <input id="<?php echo $this->get_field_id('google');?>"
                     name="<?php echo $this->get_field_name('google'); ?>"
                     value="<?php echo esc_attr($instance['google']);?>" />
+                    <p>
+                    <label for="radio2">Choose:</label>
+                    <input name="radio2" type="radio" value="instagram1" checked="checked" id="instagram1"/>
+                    <input name="radio2" type="radio" value="instagram2" id="instagram"/>
+                    <img src="http://i.imgur.com/Fd7pXPC.png" style="width:30x; height:30px">
+                 </p> 
           </label>
           <br/>
           <label for="<?php echo $this->get_field_id('tumblr');?>">
@@ -105,6 +117,12 @@ class socialmediahub extends WP_Widget
                     <input id="<?php echo $this->get_field_id('tumblr');?>"
                     name="<?php echo $this->get_field_name('tumblr'); ?>"
                     value="<?php echo esc_attr($instance['tumblr']);?>" />
+                    <p>
+                    <label for="radio2">Choose:</label>
+                    <input name="radio2" type="radio" value="instagram1" checked="checked" id="instagram1"/>
+                    <input name="radio2" type="radio" value="instagram2" id="instagram"/>
+                    <img src="http://i.imgur.com/HDHpL0K.png" style="width:30x; height:30px">
+                 </p> 
           </label>
           <br/>
 
