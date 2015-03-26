@@ -14,24 +14,13 @@ function socialmediahub_init()
 }	
 add_action('widgets_init','socialmediahub_init');
 
-
-
 function register_stylesheets()
 {
-	  // Register style sheet.
-    add_action( 'wp_enqueue_scripts', 'register_plugin_styles' );
-    /**
-     * Register style sheet.
-     */
-    function register_plugin_styles() 
-    {
-      wp_register_style('socialmediahub', plugins_url('socialmedstyle.css', FILE), array(), null);
-      wp_enqueue_style( 'my-plugin' );
-    }
+    //link an external css stylesheet
+    wp_register_style('socialmediahub', plugins_url('socialmedstyle.css', __FILE__), array(), null);
+    wp_enqueue_style('socialmediahub');
 }
-
-
-
+add_action('wp_enqueue_scripts','register_stylesheets',99); //added 99 to it because the default is 10 and it seemed like it did not push the css code 
 
 
 class socialmediahub extends WP_Widget
