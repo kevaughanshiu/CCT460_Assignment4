@@ -28,7 +28,7 @@ function register_stylesheets()
       wp_register_style('socialmediahub', plugins_url('socialmedstyle.css', FILE), array(), null);
       wp_enqueue_style( 'my-plugin' );
     }
-  }
+}
 
 
 
