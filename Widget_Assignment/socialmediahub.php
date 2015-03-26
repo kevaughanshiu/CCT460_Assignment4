@@ -69,7 +69,7 @@ class socialmediahub extends WP_Widget
                     <label for="radio1">Choose:</label>
                     <input name="radio1" type="radio" value="twitter1" checked="checked" id="twitter1"/>
                     <input name="radio1" type="radio" value="twitter2" id="twitter2"/>
-                    <img src="Widget_Assignment/icons/twitter.png"/>
+                    <img src="widassignment/icons/twitter.png"/>
                  </p>   
           </label> 
           <br/>
@@ -82,7 +82,7 @@ class socialmediahub extends WP_Widget
                     <label for="radio2">Choose:</label>
                     <input name="radio2" type="radio" value="instagram1" checked="checked" id="instagram1"/>
                     <input name="radio2" type="radio" value="instagram2" id="instagram"/>
-                    <img src="wp-content/plugins/Widget_Assignment/icons/instagram.png">
+                    <img src="wp-content/plugins/widassignment/icons/instagram.png">
                  </p>   
           </label>
           <br/>
