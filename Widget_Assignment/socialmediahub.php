@@ -48,7 +48,7 @@ class socialmediahub extends WP_Widget
         <a href="<?php echo $instagram?>">Instagram</a><br/>
         <a href="<?php echo $facebook?>">Facbook</a><br/>
         <a href="<?php echo $google?>">Google+</a><br/>
-        <a href="<?php echo $tumblr?>"><img src="Widget_Assignment/icons/tumblr.png"></a><br/>
+        <a href="<?php echo $tumblr?>"><img src="widassignment/icons/tumblr.png"></a><br/>
 
         <?php echo $after_widget; ?>	
     </div>
@@ -69,7 +69,7 @@ class socialmediahub extends WP_Widget
                     <label for="radio1">Choose:</label>
                     <input name="radio1" type="radio" value="twitter1" checked="checked" id="twitter1"/>
                     <input name="radio1" type="radio" value="twitter2" id="twitter2"/>
-                    <img src="Widget_Assignment/icons/twitter.png">
+                    <img src="Widget_Assignment/icons/twitter.png"/>
                  </p>   
           </label> 
           <br/>
