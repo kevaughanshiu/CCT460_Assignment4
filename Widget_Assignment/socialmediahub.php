@@ -37,8 +37,8 @@ class socialmediahub extends WP_Widget
 		$twitter=($instance['twitter']) ? 'http://twitter.com/' . $instance['twitter'] : 'N/A';
     $instagram=($instance['instagram']) ? 'http://www.instagram.com/' . $instance['instagram'] : 'N/A';
     $facebook=($instance['facebook']) ? 'http://www.facebook.com/' . $instance['facebook'] : 'N/A';
-    $google=($instance['google']) ? $instance['google'] : 'N/A';
-    $tumblr=($instance['tumblr']) ? $instance['tumblr'] : 'N/A';
+    $google=($instance['google']) ? 'http://www.google.com/+' . $instance['google'] : 'N/A';
+    $tumblr=($instance['tumblr']) ? $instance['tumblr'] . '.tumblr.com' : 'N/A';
 ?>
 
 	<div class ="frontface">
