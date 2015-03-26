@@ -44,11 +44,11 @@ class socialmediahub extends WP_Widget
 	<div class ="frontface">
 		<?php echo $before_widget; ?>
 		<?php echo $before_title . $title . $after_title ?>
-		<a href="<?php echo $twitter?>">Twitter</a><br/>
-        <a href="<?php echo $instagram?>">Instagram</a><br/>
-        <a href="<?php echo $facebook?>">Facbook</a><br/>
-        <a href="<?php echo $google?>">Google+</a><br/>
-        <a href="<?php echo $tumblr?>"><img src="widassignment/icons/tumblr.png"></a><br/>
+		<a href="<?php echo $twitter?>"><img src="http://i.imgur.com/Mv8pCdy.png" style="width:25x; height:25px"></a><br/>
+        <a href="<?php echo $instagram?>"><img src="http://i.imgur.com/VGWFXae.png" style="width:25x; height:25px"></a><br/>
+        <a href="<?php echo $facebook?>"><img src="http://i.imgur.com/jeEPz6J.png" style="width:25x; height:25px"></a><br/>
+        <a href="<?php echo $google?>"><img src="http://i.imgur.com/Fd7pXPC.png" style="width:25x; height:25px"></a><br/>
+        <a href="<?php echo $tumblr?>"><img src="http://i.imgur.com/HDHpL0K.png" style="width:25x; height:25px"></a><br/>
 
         <?php echo $after_widget; ?>	
     </div>
@@ -69,7 +69,7 @@ class socialmediahub extends WP_Widget
                     <label for="radio1">Choose:</label>
                     <input name="radio1" type="radio" value="twitter1" checked="checked" id="twitter1"/>
                     <input name="radio1" type="radio" value="twitter2" id="twitter2"/>
-                    <img src="widassignment/icons/twitter.png"/>
+                    <img src="http://i.imgur.com/Mv8pCdy.png"/>
                  </p>   
           </label> 
           <br/>
@@ -82,7 +82,7 @@ class socialmediahub extends WP_Widget
                     <label for="radio2">Choose:</label>
                     <input name="radio2" type="radio" value="instagram1" checked="checked" id="instagram1"/>
                     <input name="radio2" type="radio" value="instagram2" id="instagram"/>
-                    <img src="wp-content/plugins/widassignment/icons/instagram.png">
+                    <img src="http://i.imgur.com/VGWFXae.png">
                  </p>   
           </label>
           <br/>
