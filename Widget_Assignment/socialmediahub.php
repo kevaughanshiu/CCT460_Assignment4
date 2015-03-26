@@ -51,18 +51,39 @@ class socialmediahub extends WP_Widget
  <!--what shows up on the fron of the website, it shows the icon and makes it a clickable icon to direct them to the social media pages --> 
 	<div class ="frontface">
 		<?php echo $before_widget; ?>
-		<?php echo $before_title . $title . $after_title ?>
+		<?php echo $before_title . $title . $after_title; ?>
    
 <?php
-    if ($_GET['radio1'] == 'twitter1') {
-      ?><a href="<?php echo $twitter?>"><img src="http://i.imgur.com/FfOQSXU.png" style="width:50px; height:50px"></a><br/>
+  echo 'debug';
+ ?> <form action="http://phoenix.sheridanc.on.ca/~ccit2646/wp-content/plugins/widassignment/socialmediahub.php" method="get">
+
+  <label for="<?php echo $this->get_field_id('twitter');?>">
+               Twitter Username: 
+
+                    <input id="<?php echo $this->get_field_id('twitter');?>"
+                    name="<?php echo $this->get_field_name('twitter'); ?>"
+                    value="<?php echo esc_attr($instance['twitter']);?>" /> 
+                <!--used radio buttons to allow user to choose a specific icon out of the two, was not able to figure out how to add boolean if/else if function-->    
+                 <p>
+                    <label for="radio1">Choose:</label>
+                    <input name="radio1" type="radio" value="twitter1" checked="checked" id="twitter1"/>
+                        <img src="http://i.imgur.com/FfOQSXU.png" style="width:30px; height:30px">
+                    <input name="radio1" type="radio" value="twitter2" id="twitter2"/>
+                        <img src="http://i.imgur.com/Mv8pCdy.png" style="width:30x; height:30px">
+                 </p>   
+          </label> 
+<?php if ($_GET['radio1'] == 'twitter1') {
+      ?><a href="<?php echo $twitter;?>"><img src="http://i.imgur.com/FfOQSXU.png" style="width:50px; height:50px"></a><br/>
      <?php
     }
     elseif ($_GET['radio1']== 'twitter2'){
-     ?>  <a href="<?php echo $twitter?>"><img src="http://i.imgur.com/Mv8pCdy.png" style="width:50px; height:50px"></a><br/>
+     ?><a href="<?php echo $twitter;?>"><img src="http://i.imgur.com/Mv8pCdy.png" style="width:50px; height:50px"></a><br/>
     <?php
     }
-?>    
+?>  
+
+</form>
+   
 		   <!--
         <a href="<?php echo $twitter?>"><img src="http://i.imgur.com/Mv8pCdy.png" style="width:50px; height:50px"></a><br/>
         <a href="<?php echo $instagram?>"><img src="http://i.imgur.com/VGWFXae.png" style="width:50px; height:50px"></a><br/>
@@ -70,14 +91,12 @@ class socialmediahub extends WP_Widget
         <a href="<?php echo $google?>"><img src="http://i.imgur.com/Fd7pXPC.png" style="width:50px; height:50px"></a><br/>
         <a href="<?php echo $tumblr?>"><img src="http://i.imgur.com/HDHpL0K.png" style="width:50px; height:50px"></a><br/>
 -->
-=======
 		<a href="<?php echo $twitter?>"><img src="http://i.imgur.com/Mv8pCdy.png" style="width:50px; height:50px"></a>
         <a href="<?php echo $instagram?>"><img src="http://i.imgur.com/VGWFXae.png" style="width:50px; height:50px"></a>
         <a href="<?php echo $facebook?>"><img src="http://i.imgur.com/jeEPz6J.png" style="width:50px; height:50px"></a>
         <br><a href="<?php echo $google?>"><img src="http://i.imgur.com/Fd7pXPC.png" style="width:50px; height:50px"></a>
         <a href="<?php echo $tumblr?>"><img src="http://i.imgur.com/HDHpL0K.png" style="width:50px; height:50px"></a>
 
->>>>>>> origin/master
         <?php echo $after_widget; ?>	
     </div>
 
@@ -97,9 +116,9 @@ class socialmediahub extends WP_Widget
                 <!--used radio buttons to allow user to choose a specific icon out of the two, was not able to figure out how to add boolean if/else if function-->    
                  <p>
                     <label for="radio1">Choose:</label>
-                    <input name="radio1" method="get" type="radio" value="twitter1" checked="checked" id="twitter1"/>
+                    <input name="radio1" type="radio" value="twitter1" checked="checked" id="twitter1"/>
                         <img src="http://i.imgur.com/FfOQSXU.png" style="width:30px; height:30px">
-                    <input name="radio1" method="get" type="radio" value="twitter2" id="twitter2"/>
+                    <input name="radio1" type="radio" value="twitter2" id="twitter2"/>
                         <img src="http://i.imgur.com/Mv8pCdy.png" style="width:30x; height:30px">
                  </p>   
           </label> 
