@@ -144,9 +144,13 @@ class socialmediahub extends WP_Widget
 }
 
 //Add Shortcode
-function kase_thanks_short() {
-  return "<h3>Thanks for Following!</h3>";
+function kase_short($atts, $content = null){
+  extract(shortcode_atts(array(
+    'class' => ''
+  ), $atts));
+  
+  return '<div class="kasesc">' . do_shortcode($content) . '</div>';
 }
-add_shortcode ('kase_thanks_short', 'kase_thanks_short');
+add_shortcode('kase_short', 'kase_short');
 
 ?>
