@@ -17,3 +17,5 @@ Kevaughan Shiu
 
 URL: phoenix.sheridanc.on.ca/~ccit2646
 Github: https://github.com/kevaughanshiu/CCT460_Assignment4
+
+NOTE: In the 'first attempt' folder is our, well, first attempt. It was in the form of a widget, so we had to change that. I hope that file can prove our knowledge to you as well.
