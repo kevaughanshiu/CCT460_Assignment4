@@ -65,10 +65,10 @@ class socialmediahub extends WP_Widget
                 <!--used radio buttons to allow user to choose a specific icon out of the two, was not able to figure out how to add boolean if/else if function-->    
                  <p>
                     <label for="radio1">Choose:</label>
-                    <input name="radio1" type="radio" value="twitter1" checked="checked" id="twitter1"/>
-                        <img src="http://i.imgur.com/FfOQSXU.png" style="width:30px; height:30px">
-                    <input name="radio1" type="radio" value="twitter2" id="twitter2"/>
-                        <img src="http://i.imgur.com/Mv8pCdy.png" style="width:30x; height:30px">
+                    <input name="<?php echo $this->get_field_name('radio1')?>" type="radio" value="twitter1" checked="checked" id="twitter1"/>
+                        <img src="http://i.imgur.com/Mv8pCdy.png" style="width:30px; height:30px">
+                    <input name="<?php echo $this->get_field_name('radio1')?>" type="radio" value="twitter2" id="twitter2"/>
+                        <img src="http://i.imgur.com/FfOQSXU.png" style="width:30x; height:30px">
                  </p>   
           </label> 
 
@@ -104,6 +104,9 @@ class socialmediahub extends WP_Widget
 	}
 	function form($instance)
 	{
+    $instance = wp_parse_args( (array)$instance, $defaults );
+    //default value
+    $rating = (isset($instance['rating']) && is)
 
 ?>
 <!--backhouse form for the user to put their social media links in-->
@@ -116,10 +119,10 @@ class socialmediahub extends WP_Widget
                 <!--used radio buttons to allow user to choose a specific icon out of the two, was not able to figure out how to add boolean if/else if function-->    
                  <p>
                     <label for="radio1">Choose:</label>
-                    <input name="radio1" type="radio" value="twitter1" checked="checked" id="twitter1"/>
-                        <img src="http://i.imgur.com/FfOQSXU.png" style="width:30px; height:30px">
-                    <input name="radio1" type="radio" value="twitter2" id="twitter2"/>
-                        <img src="http://i.imgur.com/Mv8pCdy.png" style="width:30x; height:30px">
+                    <input name="<?php echo $this->get_field_name('radio1')?>" type="radio" value="twitter1" checked="checked" id="twitter1"/>
+                        <img src="http://i.imgur.com/Mv8pCdy.png" style="width:30px; height:30px">
+                    <input name="<?php echo $this->get_field_name('radio1')?>" type="radio" value="twitter2" id="twitter2"/>
+                        <img src="http://i.imgur.com/FfOQSXU.png" style="width:30x; height:30px">
                  </p>   
           </label> 
           <br/>
@@ -131,9 +134,9 @@ class socialmediahub extends WP_Widget
                    <p>
                     <label for="radio2">Choose:</label>
                     <input name="radio2" type="radio" value="instagram1" checked="checked" id="instagram1"/>
-                        <img src="http://i.imgur.com/oJ1p1BR.png" style="width:30px; height:30px">
+                        <img src="http://i.imgur.com/VGWFXae.png" style="width:30px; height:30px">
                     <input name="radio2" type="radio" value="instagram2" id="instagram2"/>
-                        <img src="http://i.imgur.com/VGWFXae.png" style="width:30x; height:30px">
+                        <img src="http://i.imgur.com/oJ1p1BR.png" style="width:30x; height:30px">
                  </p>   
           </label>
           <br/>
@@ -145,9 +148,9 @@ class socialmediahub extends WP_Widget
                     <p>
                     <label for="radio3">Choose:</label>
                     <input name="radio3" type="radio" value="facebook1" checked="checked" id="facebook1"/>
-                        <img src="http://i.imgur.com/BxfLpwK.png" style="width:30px; height:30px">
+                        <img src="http://i.imgur.com/jeEPz6J.png" style="width:30px; height:30px">
                     <input name="radio3" type="radio" value="facebook2" id="facebook2"/>
-                        <img src="http://i.imgur.com/jeEPz6J.png" style="width:30x; height:30px">
+                        <img src="http://i.imgur.com/BxfLpwK.png" style="width:30x; height:30px">
                  </p> 
           </label>
           <br/>
@@ -159,9 +162,9 @@ class socialmediahub extends WP_Widget
                     <p>
                     <label for="radio4">Choose:</label>
                     <input name="radio4" type="radio" value="google1" checked="checked" id="google1"/>
-                      <img src="http://i.imgur.com/hZM0U57.png" style="width:30px; height:30px">
+                      <img src="http://i.imgur.com/Fd7pXPC.png" style="width:30px; height:30px">
                     <input name="radio4" type="radio" value="google2" id="google2"/>
-                    <img src="http://i.imgur.com/Fd7pXPC.png" style="width:30x; height:30px">
+                    <img src="http://i.imgur.com/hZM0U57.png" style="width:30x; height:30px">
                  </p> 
           </label>
           <br/>
@@ -173,9 +176,9 @@ class socialmediahub extends WP_Widget
                     <p>
                     <label for="radio5">Choose:</label>
                     <input name="radio5" type="radio" value="tumblr1" checked="checked" id="tumblr1"/>
-                      <img src="http://i.imgur.com/et6kEzp.png" style="width:30px; height:30px">
+                      <img src="http://i.imgur.com/HDHpL0K.png" style="width:30px; height:30px">
                     <input name="radio5" type="radio" value="tumblr2" id="tumblr2"/>
-                    <img src="http://i.imgur.com/HDHpL0K.png" style="width:30x; height:30px">
+                    <img src="http://i.imgur.com/et6kEzp.png" style="width:30x; height:30px">
                  </p> 
           </label>
           <br/>
