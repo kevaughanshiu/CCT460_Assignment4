@@ -65,9 +65,9 @@ class socialmediahub extends WP_Widget
                 <!--used radio buttons to allow user to choose a specific icon out of the two, was not able to figure out how to add boolean if/else if function-->    
                  <p>
                     <label for="radio1">Choose:</label>
-                    <input name="<?php echo $this->get_field_name('radio1'); ?>" type="radio" value="<?php echo esc_attr($instance['twitter1']);?>" checked="checked" id="<?php echo $this->get_field_id('twitter1');?>">
+                    <input name="radio1" type="radio" value="twitter1" checked="checked" id="twitter1"/>
                         <img src="http://i.imgur.com/FfOQSXU.png" style="width:30px; height:30px">
-                    <input name="<?php echo $this->get_field_name('radio1'); ?>" type="radio" value="<?php echo esc_attr($instance['twitter2']);?>" id="<?php echo $this->get_field_id('twitter2');?>"/>
+                    <input name="radio1" type="radio" value="twitter2" id="twitter2"/>
                         <img src="http://i.imgur.com/Mv8pCdy.png" style="width:30x; height:30px">
                  </p>   
           </label> 
@@ -116,9 +116,9 @@ class socialmediahub extends WP_Widget
                 <!--used radio buttons to allow user to choose a specific icon out of the two, was not able to figure out how to add boolean if/else if function-->    
                  <p>
                     <label for="radio1">Choose:</label>
-                    <input name="<?php echo $this->get_field_name('radio1'); ?>" type="radio" value="<?php echo esc_attr($instance['twitter1']);?>" checked="checked" id="<?php echo $this->get_field_id('twitter1');?>">
+                    <input name="radio1" type="radio" value="twitter1" checked="checked" id="twitter1"/>
                         <img src="http://i.imgur.com/FfOQSXU.png" style="width:30px; height:30px">
-                    <input name="<?php echo $this->get_field_name('radio1'); ?>" type="radio" value="<?php echo esc_attr($instance['twitter2']);?>" id="<?php echo $this->get_field_id('twitter2');?>"/>
+                    <input name="radio1" type="radio" value="twitter2" id="twitter2"/>
                         <img src="http://i.imgur.com/Mv8pCdy.png" style="width:30x; height:30px">
                  </p>   
           </label> 
@@ -185,6 +185,7 @@ class socialmediahub extends WP_Widget
 }
 
 //Add Shortcode
+//when I change the do_shortcode, it breaks the page
 function kase_short($atts, $content = null){
   extract(shortcode_atts(array(
     'class' => ''
