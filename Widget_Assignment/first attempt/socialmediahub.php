@@ -54,25 +54,7 @@ class socialmediahub extends WP_Widget
 		<?php echo $before_title . $title . $after_title; ?>
    
 <?php
-  echo 'debug'; ?> 
-  <form action="socialmediahub.php" method="get">
-    <label for="<?php echo $this->get_field_id('twitter');?>">
-               Twitter Username: 
-
-                    <input id="<?php echo $this->get_field_id('twitter');?>"
-                    name="<?php echo $this->get_field_name('twitter'); ?>"
-                    value="<?php echo esc_attr($instance['twitter']);?>" /> 
-                <!--used radio buttons to allow user to choose a specific icon out of the two, was not able to figure out how to add boolean if/else if function-->    
-                 <p>
-                    <label for="radio1">Choose:</label>
-                    <input name="<?php echo $this->get_field_name('radio1')?>" type="radio" value="twitter1" checked="checked" id="twitter1"/>
-                        <img src="http://i.imgur.com/Mv8pCdy.png" style="width:30px; height:30px">
-                    <input name="<?php echo $this->get_field_name('radio1')?>" type="radio" value="twitter2" id="twitter2"/>
-                        <img src="http://i.imgur.com/FfOQSXU.png" style="width:30x; height:30px">
-                 </p>   
-          </label> 
-
-<?php if ($_GET['radio1'] == 'twitter1') {
+   if ($_GET['radio1'] == 'twitter1') {
       ?><a href="<?php echo $twitter;?>"><img src="http://i.imgur.com/FfOQSXU.png" style="width:50px; height:50px"></a><br/>
      <?php
     }
@@ -102,6 +84,7 @@ class socialmediahub extends WP_Widget
 
 <?php
 	}
+
 	function form($instance)
 	{
     $instance = wp_parse_args( (array)$instance, $defaults );
